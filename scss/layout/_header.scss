@@ -15,11 +15,22 @@ header{
     right:0;
     width: 100%;
 
+    @include md{
+        grid-template-columns: 60% auto;
+        grid-template-areas: 
+        "logo-container logo-container"
+        "main-nav survival-container";
+    }
+
     #burger-container{
         grid-area: burger-container;
         padding-left: 16px;
         display: flex;
         align-items: center;
+
+        @include md{
+            display: none;
+        }
 
         button{
             padding: 0;
@@ -33,6 +44,7 @@ header{
         justify-content: flex-end;
         align-items: center;
         padding-right: 16px;
+        height: 100%;
     }
 
     #main-nav{
@@ -46,6 +58,13 @@ header{
 
     #logo-container{
         display: none;
+
+        @include md{
+            display: block;
+            grid-area: logo-container;
+            text-align: center;
+            padding-bottom: 8px;
+        }
     }
 }
 

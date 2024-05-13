@@ -8,14 +8,17 @@ burgerBtn.addEventListener("click", () =>{
 
     // check to see if we can see the main nav
     if(mainNavVisible === false){
-
+        mainNavContainer.classList.remove("hideMainNavAtMobile");
         mainNavVisible = true;
 
     }else{
-
+        mainNavContainer.classList.add("hideMainNavAtMobile");
         mainNavVisible = false;
     }
+})
 
-
+mainNavContainer.addEventListener("click", function(){
+    mainNavContainer.classList.add("hideMainNavAtMobile");
+    mainNavVisible = false;
 })
 
