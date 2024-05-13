@@ -404,12 +404,11 @@ a:link, a:visited {
 #main-nav {
   background-color: var(--yellow);
   padding: 24px 16px;
-  margin-top: 16px;
 }
 @media (min-width: 768px) {
   #main-nav {
     background-color: var(--white);
-    margin-top: 0;
+    padding-bottom: 16px;
   }
 }
 @media (min-width: 768px) {
@@ -458,12 +457,13 @@ header {
   -ms-grid-columns: 20% auto;
   grid-template-columns: 20% auto;
       grid-template-areas: "burger-container survival-container" "main-nav main-nav";
-  padding: 24px 0;
+  padding: 24px 0 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
+  background-color: var(--white);
 }
 @media (min-width: 768px) {
   header {
@@ -508,6 +508,7 @@ header #survival-container {
           align-items: center;
   padding-right: 16px;
   height: 100%;
+  padding-bottom: 16px;
 }
 header #main-nav {
   -ms-grid-row: 2;
@@ -555,3 +556,26 @@ header #logo-container {
 /* =============
     Footer
 ============= */
+#hero {
+  background-image: url("../img/hero/hero.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 74px;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 60vh;
+    margin-top: 125px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero {
+    height: 70vh;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    height: 85vh;
+  }
+}
