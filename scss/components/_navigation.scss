@@ -45,7 +45,11 @@ a:link, a:visited{
                 }
 
                 &:hover, &:active{
-                    color: var(--yellow);
+                   
+
+                    @include md{
+                        color: var(--yellow);
+                    }
                 }
             }
         }

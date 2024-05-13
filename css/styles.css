@@ -440,8 +440,10 @@ a:link, a:visited {
     font-size: 1.125rem;
   }
 }
-#main-nav ul li a:link:hover, #main-nav ul li a:link:active, #main-nav ul li a:visited:hover, #main-nav ul li a:visited:active {
-  color: var(--yellow);
+@media (min-width: 768px) {
+  #main-nav ul li a:link:hover, #main-nav ul li a:link:active, #main-nav ul li a:visited:hover, #main-nav ul li a:visited:active {
+    color: var(--yellow);
+  }
 }
 #main-nav ul li:last-child {
   border: none;
