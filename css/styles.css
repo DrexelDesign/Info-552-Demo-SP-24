@@ -348,6 +348,16 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -556,6 +566,9 @@ header #logo-container {
 /* =============
     Footer
 ============= */
+/* =============
+    Heroes
+============= */
 #hero {
   background-image: url("../img/hero/hero.jpg");
   height: 50vh;
@@ -578,4 +591,106 @@ header #logo-container {
   #hero {
     height: 85vh;
   }
+}
+
+/* =============
+    history
+============= */
+#history {
+  padding: 60px 16px;
+}
+@media (min-width: 768px) {
+  #history {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 768px auto;
+    grid-template-columns: auto 768px auto;
+        grid-template-areas: ". history .";
+  }
+}
+@media (min-width: 768px) {
+  #history > div {
+    grid-area: history;
+  }
+}
+@media (min-width: 768px) {
+  #history > div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+#history > div #history-top {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #history > div #history-top {
+    padding: 0 100px;
+  }
+}
+#history > div #history-top #profile-img {
+  height: 115px;
+  width: 115px;
+  background-image: url("../img/history/history.jpg");
+  background-position: center;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+#history > div #history-top h1 {
+  margin: 40px 0 25px;
+  color: var(--yellow);
+  font-family: "Comfortaa", sans-serif;
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  #history > div #history-top h1 {
+    margin: 40px 0 65px;
+    font-size: 3.4375rem;
+  }
+}
+#history > div #history-top h1 span {
+  font-size: 1.9375rem;
+}
+@media (min-width: 768px) {
+  #history > div #history-top h1 span {
+    font-size: 2.625rem;
+  }
+}
+#history > div #history-top p {
+  font-size: 1.0625rem;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #history > div #history-top p {
+    font-size: 1.1875rem;
+    margin-bottom: 34px;
+  }
+}
+#history > div #history-middle p {
+  margin-bottom: 56px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #history > div #history-bottom {
+    padding: 0 7vw;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-bottom {
+    padding: 0 5vw;
+  }
+}
+@media (min-width: 1200px) {
+  #history > div #history-bottom {
+    padding: 0 3vw;
+  }
+}
+#history > div #history-bottom p {
+  text-align: justify;
+  line-height: 1.25rem;
+}
+#history > div #history-bottom p span {
+  font-weight: 800;
 }
