@@ -1,3 +1,41 @@
 /* =============
     Footer
 ============= */
+footer{
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 45px 0;
+    h1{
+        font-size: rem-calc(25);
+        span{
+            color: var(--white);
+        }
+
+        @include md{
+            font-size: rem-calc(31);
+        }
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+
+        li{
+            margin: 0 16px;
+            a:link, a:visited{
+                color: var(--black);
+                font-size: rem-calc(20);
+                transition: 0.25s;
+
+                @include md{
+                    font-size: rem-calc(30);
+                }
+            }
+
+            a:hover, a:active{
+                color: var(--white);
+            }
+        }
+    }
+}
