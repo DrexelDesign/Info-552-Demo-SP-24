@@ -1,10 +1,7 @@
 /* =============
     Heroes
 ============= */
-
-
-#hero{
-    background-image: url("../img/hero/hero.jpg");
+.hero{
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -23,3 +20,18 @@
         height: 85vh;
     }
 }
+
+#hero{
+    background-image: url("../img/hero/hero.jpg");
+}
+
+#hero-2{
+    background-image: url("../img/hero-2/hero.jpg");
+    margin-top: 0px;
+    background-position: 60% center;
+
+    @include xl{
+        background-position: center top;
+    }
+}
+

@@ -569,27 +569,41 @@ header #logo-container {
 /* =============
     Heroes
 ============= */
-#hero {
-  background-image: url("../img/hero/hero.jpg");
+.hero {
   height: 50vh;
   background-size: cover;
   background-position: center;
   margin-top: 74px;
 }
 @media (min-width: 768px) {
-  #hero {
+  .hero {
     height: 60vh;
     margin-top: 125px;
   }
 }
 @media (min-width: 1024px) {
-  #hero {
+  .hero {
     height: 70vh;
   }
 }
 @media (min-width: 1200px) {
-  #hero {
+  .hero {
     height: 85vh;
+  }
+}
+
+#hero {
+  background-image: url("../img/hero/hero.jpg");
+}
+
+#hero-2 {
+  background-image: url("../img/hero-2/hero.jpg");
+  margin-top: 0px;
+  background-position: 60% center;
+}
+@media (min-width: 1200px) {
+  #hero-2 {
+    background-position: center top;
   }
 }
 
@@ -693,4 +707,121 @@ header #logo-container {
 }
 #history > div #history-bottom p span {
   font-weight: 800;
+}
+
+/* =============
+    skills
+============= */
+@media (min-width: 1200px) {
+  #skills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". skills .";
+  }
+}
+@media (min-width: 1200px) {
+  #skills #skills-grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+    grid-area: skills;
+  }
+}
+@media (min-width: 1200px) {
+  #skills #skills-grid-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+#skills #skills-grid-container #skills-hero {
+  background-image: url("../img/skills/robot.jpg");
+  background-size: cover;
+  background-position: 90% center;
+  height: 60vh;
+}
+@media (min-width: 768px) {
+  #skills #skills-grid-container #skills-hero {
+    height: 50vh;
+    background-position: 90% 40%;
+  }
+}
+@media (min-width: 1200px) {
+  #skills #skills-grid-container #skills-hero {
+    height: 100%;
+  }
+}
+#skills #skills-grid-container #skills-content {
+  background-color: var(--charcoal);
+  color: var(--white);
+  padding: 60px 16px;
+}
+@media (min-width: 768px) {
+  #skills #skills-grid-container #skills-content {
+    padding: 24px 15vw 48px;
+  }
+}
+@media (min-width: 1200px) {
+  #skills #skills-grid-container #skills-content {
+    padding: 24px 48px 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+#skills #skills-grid-container #skills-content #skills-stats-container h1 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  font-family: "Comfortaa", sans-serif;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container p {
+  text-align: justify;
+  line-height: 1.25rem;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul {
+  margin-top: 40px;
+  width: 100%;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul li {
+  padding-bottom: 40px;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul li .skills-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul li .skills-titles h4 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul li .skills-titles .skills-numbers {
+  font-weight: 700;
+  margin-left: auto;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul li .black-bar {
+  height: 10px;
+  width: 100%;
+  background-color: var(--black);
+  margin-top: 8px;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul li .black-bar .yellow-bar {
+  height: 10px;
+  background-color: var(--yellow);
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul li:last-child {
+  padding-bottom: 0;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul #emotion .yellow-bar {
+  width: 62%;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul #learning .yellow-bar {
+  width: 90%;
+}
+#skills #skills-grid-container #skills-content #skills-stats-container ul #math .yellow-bar {
+  width: 95%;
 }

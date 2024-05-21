@@ -1,0 +1,123 @@
+/* =============
+    skills
+============= */
+
+#skills{
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". skills .";
+    }
+
+    #skills-grid-container{
+
+        @include xl{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-area: skills;
+        }
+
+        #skills-hero{
+            background-image: url("../img/skills/robot.jpg");
+            background-size: cover;
+            background-position: 90% center;
+            height: 60vh;
+
+            @include md{
+                height: 50vh;
+                background-position: 90% 40%;
+            }
+
+            @include xl{
+                height: 100%;
+            }
+        }
+    
+        #skills-content{
+            background-color: var(--charcoal);
+            color: var(--white);
+            padding: 60px 16px;
+    
+            @include md{
+                padding: 24px 15vw 48px;
+            }
+
+            @include xl{
+                padding: 24px 48px 48px;
+                display: flex;
+                align-items: center;
+            }
+
+            #skills-stats-container{
+    
+            h1{
+                font-size: rem-calc(26);
+                font-weight: 700;
+                font-family: "Comfortaa", sans-serif;
+                
+            }
+    
+            p{
+                text-align: justify;
+                line-height: rem-calc(20);
+            }
+                ul{
+                    margin-top: 40px;
+                    width: 100%;
+
+                    li{
+                        padding-bottom: 40px;
+                        .skills-titles{
+                            display: flex;
+        
+                            h4{
+                                font-weight: 400;
+                                font-size: rem-calc(18);
+                            }
+        
+                            .skills-numbers{
+                                font-weight: 700;
+                                margin-left: auto;
+                            }
+                        }
+        
+                        .black-bar{
+                            height: 10px;
+                            width: 100%;
+                            background-color: var(--black);
+                            margin-top: 8px;
+        
+                            .yellow-bar{
+                                height: 10px;
+                                background-color: var(--yellow);
+                            }
+                        }
+                    }
+        
+                    li:last-child{
+                        padding-bottom: 0;
+                    }
+        
+                    #emotion{
+                        .yellow-bar{
+                            width: 62%;
+                        }
+                    }
+        
+                    #learning{
+                        .yellow-bar{
+                            width: 90%;
+                        }
+                    }
+        
+                    #math{
+                        .yellow-bar{
+                            width: 95%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
