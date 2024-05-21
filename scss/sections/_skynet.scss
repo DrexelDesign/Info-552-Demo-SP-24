@@ -1,0 +1,108 @@
+/* =============
+    skynet
+============= */
+
+#skynet{
+    margin-top: 60px;
+    padding: 0 16px;
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". skynet .";
+    }
+
+
+    ul{
+        display: grid;
+        grid-template-rows: repeat(5, 300px);
+        grid-template-areas: 
+        "s7"
+        "s1"
+        "s1"
+        "s6"
+        "s3";
+        gap: 16px;
+
+        @include md{
+            grid-template-rows: repeat(3, 250px);
+            grid-template-areas: 
+            "s1 s3"
+            "s1 s7"
+            "s5 s6";
+        }
+
+        @include xl{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "s1 s2 s3"
+            "s1 s7 s4"
+            "s6 s5 s4";
+
+            grid-area: skynet;
+        }
+
+
+
+        li{
+            background-size: cover;
+            background-position: center;
+        }
+
+        #s1{
+            grid-area: s1;
+            background-image: url("../img/skynet/gallery-1.jpg");
+        }
+
+        #s2{
+            background-image: url("../img/skynet/gallery-2.jpg");
+
+            @include xl{
+                grid-area: s2;
+            }
+
+            @include xl{
+                background-position: center top;
+            }
+        }
+
+        #s3{
+            background-image: url("../img/skynet/gallery-3.jpg");
+
+            @include md{
+                grid-area: s3;
+            }
+
+            @include xl{
+                background-position: center top;
+            }
+        }
+
+        #s4{
+            background-image: url("../img/skynet/gallery-4.jpg");
+            @include xl{
+                grid-area: s4;
+            }
+        }
+
+        #s5{
+            grid-area: s5;
+            background-image: url("../img/skynet/gallery-5.jpg");
+        }
+
+        #s6{
+            grid-area: s6;
+            background-image: url("../img/skynet/gallery-6.jpg");
+        }
+
+        #s7{
+            font-family: "Pacifico", cursive;
+            color: var(--yellow);
+            font-size: rem-calc(43);
+            grid-area: s7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

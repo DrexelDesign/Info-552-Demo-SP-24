@@ -333,6 +333,24 @@ template {
 /* =============
     Base
 ============= */
+.show-md {
+  display: none;
+}
+@media (min-width: 768px) {
+  .show-md {
+    display: block;
+  }
+}
+
+.show-lg {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-lg {
+    display: block;
+  }
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -824,4 +842,179 @@ header #logo-container {
 }
 #skills #skills-grid-container #skills-content #skills-stats-container ul #math .yellow-bar {
   width: 95%;
+}
+
+/* =============
+    skynet
+============= */
+#skynet {
+  margin-top: 60px;
+  padding: 0 16px;
+}
+@media (min-width: 1200px) {
+  #skynet {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". skynet .";
+  }
+}
+#skynet ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 300px 16px 300px 16px 300px 16px 300px 16px 300px;
+  grid-template-rows: repeat(5, 300px);
+      grid-template-areas: "s7" "s1" "s1" "s6" "s3";
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #skynet ul {
+    -ms-grid-rows: (250px)[3];
+    grid-template-rows: repeat(3, 250px);
+        grid-template-areas: "s1 s3" "s1 s7" "s5 s6";
+  }
+}
+@media (min-width: 1200px) {
+  #skynet ul {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "s1 s2 s3" "s1 s7 s4" "s6 s5 s4";
+    grid-area: skynet;
+  }
+}
+@media (min-width: 1200px) {
+  #skynet ul {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+#skynet ul li {
+  background-size: cover;
+  background-position: center;
+}
+#skynet ul #s1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: s1;
+  background-image: url("../img/skynet/gallery-1.jpg");
+}
+#skynet ul #s2 {
+  background-image: url("../img/skynet/gallery-2.jpg");
+}
+@media (min-width: 1200px) {
+  #skynet ul #s2 {
+    grid-area: s2;
+  }
+}
+@media (min-width: 1200px) {
+  #skynet ul #s2 {
+    background-position: center top;
+  }
+}
+#skynet ul #s3 {
+  background-image: url("../img/skynet/gallery-3.jpg");
+}
+@media (min-width: 768px) {
+  #skynet ul #s3 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    grid-area: s3;
+  }
+}
+@media (min-width: 1200px) {
+  #skynet ul #s3 {
+    background-position: center top;
+  }
+}
+#skynet ul #s4 {
+  background-image: url("../img/skynet/gallery-4.jpg");
+}
+@media (min-width: 1200px) {
+  #skynet ul #s4 {
+    grid-area: s4;
+  }
+}
+#skynet ul #s5 {
+  grid-area: s5;
+  background-image: url("../img/skynet/gallery-5.jpg");
+}
+#skynet ul #s6 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: s6;
+  background-image: url("../img/skynet/gallery-6.jpg");
+}
+#skynet ul #s7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  font-family: "Pacifico", cursive;
+  color: var(--yellow);
+  font-size: 2.6875rem;
+  grid-area: s7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  #skynet ul #s1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  #skynet ul #s3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #skynet ul #s5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #skynet ul #s6 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  #skynet ul #s7 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+}
+@media (min-width: 1200px) {
+  #skynet ul #s1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  #skynet ul #s2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #skynet ul #s3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  #skynet ul #s4 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+  }
+  #skynet ul #s5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  #skynet ul #s6 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #skynet ul #s7 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
 }
