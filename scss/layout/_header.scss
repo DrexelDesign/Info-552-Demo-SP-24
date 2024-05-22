@@ -17,6 +17,8 @@ header{
     background-color: var(--white);
 
     @include md{
+        position: sticky;
+        top: -70px;
         grid-template-columns: 60% auto;
         grid-template-areas: 
         "logo-container logo-container"

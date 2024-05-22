@@ -495,6 +495,8 @@ header {
 }
 @media (min-width: 768px) {
   header {
+    position: sticky;
+    top: -70px;
     -ms-grid-columns: 60% auto;
     grid-template-columns: 60% auto;
         grid-template-areas: "logo-container logo-container" "main-nav survival-container";
@@ -634,12 +636,10 @@ footer ul li a:hover, footer ul li a:active {
   height: 50vh;
   background-size: cover;
   background-position: center;
-  margin-top: 74px;
 }
 @media (min-width: 768px) {
   .hero {
     height: 60vh;
-    margin-top: 125px;
   }
 }
 @media (min-width: 1024px) {

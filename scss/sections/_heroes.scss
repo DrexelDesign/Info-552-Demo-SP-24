@@ -5,11 +5,11 @@
     height: 50vh;
     background-size: cover;
     background-position: center;
-    margin-top: 74px;
+    // margin-top: 74px;
 
     @include md{
         height: 60vh;
-        margin-top: 125px;
+        // margin-top: 125px;
     }
 
     @include lg{
