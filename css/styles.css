@@ -333,6 +333,14 @@ template {
 /* =============
     Base
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-offset {
+  scroll-margin-top: 60px;
+}
+
 .show-md {
   display: none;
 }

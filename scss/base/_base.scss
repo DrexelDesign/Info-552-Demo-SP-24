@@ -2,6 +2,15 @@
     Base
 ============= */
 
+html {
+    scroll-behavior: smooth;
+  }
+
+.scroll-offset{
+    //   this is the offset magic
+    scroll-margin-top: 60px;
+}
+
 .show-md{
     display: none;
     @include md{
