@@ -17,6 +17,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7ab68a398d.js" crossorigin="anonymous"></script>
 
+    <!-- Fancy Apps -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
     <link rel="stylesheet" href="css/styles.css">
     <title>Portfolio - Week 8!!</title>
 </head>
@@ -113,15 +116,20 @@
 
     <div id="hero-2" class="hero"></div>
 
+
+    <!-- <a href="image-a.jpeg" data-fancybox data-caption="Single image">
+        <img src="thumbnail-a.jpeg" />
+      </a> -->
+
     <section id="skynet" class="scroll-offset">
         <ul>
-            <li id="s1"></li>
-            <li id="s2" class="show-lg"></li>
-            <li id="s3"></li>
-            <li id="s4" class="show-lg"></li>
-            <li id="s5" class="show-md"></li>
-            <li id="s6"></li>
-            <li id="s7">Skynet</li>
+            <li id="s1"><a href="img/skynet/gallery-1.jpg" data-fancybox="gallery"></a></li>
+            <li id="s2" class="show-lg"><a href="img/skynet/gallery-2.jpg" data-fancybox="gallery"></a></li>
+            <li id="s3"><a href="img/skynet/gallery-3.jpg" data-fancybox="gallery"></a></li>
+            <li id="s4" class="show-lg"><a href="img/skynet/gallery-4.jpg" data-fancybox="gallery"></a></li>
+            <li id="s5" class="show-md"><a href="img/skynet/gallery-5.jpg" data-fancybox="gallery"></a></li>
+            <li id="s6"><a href="img/skynet/gallery-6.jpg" data-fancybox="gallery"></a></li>
+            <li id="s7">Skynet</li> 
         </ul>
     </section>
 
@@ -133,6 +141,12 @@
             <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+      });    
+    </script> -->
 
     <script src="js/scripts-dist.js"></script>
     

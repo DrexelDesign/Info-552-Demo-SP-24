@@ -47,6 +47,13 @@
         li{
             background-size: cover;
             background-position: center;
+
+            a{
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+                // border: 1px solid red;
+            }
         }
 
         #s1{

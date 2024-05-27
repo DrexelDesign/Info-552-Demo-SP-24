@@ -944,6 +944,11 @@ footer ul li a:hover, footer ul li a:active {
   background-size: cover;
   background-position: center;
 }
+#skynet ul li a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
 #skynet ul #s1 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 3;
