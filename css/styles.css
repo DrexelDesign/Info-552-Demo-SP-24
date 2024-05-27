@@ -368,6 +368,13 @@ ul li {
 }
 
 /* =============
+    Fancy Apps
+============= */
+.fancybox__container {
+  --fancybox-bg: rgb(34 34 34 / 95%);
+}
+
+/* =============
     Typography
 ============= */
 body {
@@ -943,6 +950,11 @@ footer ul li a:hover, footer ul li a:active {
 #skynet ul li {
   background-size: cover;
   background-position: center;
+}
+#skynet ul li a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
 }
 #skynet ul #s1 {
   -ms-grid-row: 3;

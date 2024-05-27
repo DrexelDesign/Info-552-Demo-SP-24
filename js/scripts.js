@@ -1,3 +1,7 @@
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+
 var burgerBtn = document.querySelector("#burger-container button");
 var mainNavContainer = document.querySelector("#main-nav");
 
